@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonPowerSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="66dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="16dp"
+            android:text="Power"
+            app:layout_constraintBottom_toTopOf="@+id/volumeBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/volumeBar"
+            android:layout_width="273dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/editText4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="142dp"
+            android:layout_marginStart="142dp"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/volumeBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="183dp" />
+
+        <Button
+            android:id="@+id/buttonChannelDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="240dp" />
+
+        <Button
+            android:id="@+id/buttonChannelUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            tools:layout_editor_absoluteX="241dp"
+            tools:layout_editor_absoluteY="240dp" />
+
+        <Button
+            android:id="@+id/buttonChannellist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Channellist"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="447dp" />
+
+        <Button
+            android:id="@+id/buttonNumPadToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Numpad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/buttonTimeShift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TimeShift"
+            tools:layout_editor_absoluteX="233dp"
+            tools:layout_editor_absoluteY="381dp" />
+
+        <Button
+            android:id="@+id/buttonPictureInPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PicPic"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="381dp" />
+
+        <Button
+            android:id="@+id/buttonFavoritelist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favoritenliste"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="447dp" />
+
+        <Button
+            android:id="@+id/buttonOpenFav1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fav1"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="304dp" />
+
+        <Button
+            android:id="@+id/buttonOpenFav3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fav3"
+            tools:layout_editor_absoluteX="241dp"
+            tools:layout_editor_absoluteY="304dp" />
+
+        <Button
+            android:id="@+id/buttonOpenFav2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fav2"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="304dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
